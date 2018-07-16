@@ -1,0 +1,8 @@
+$red: #ED1C2E;
+$redHover: #CC1626;
+$white: #FFF;
+.o-btn {
+  text-decoration: none;
+  color: $white;
+  padding: .85em 1.25em;
+}
