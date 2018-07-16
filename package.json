@@ -25,7 +25,7 @@
     "postcss": "^6.0.23",
     "postcss-cli": "^5.0.1",
     "postcss-nested": "^3.0.0",
-    "postcss-variables": "^1.1.1"
+    "postcss-simple-vars": "^4.1.0"
   },
   "browserslist": [
     "> 1%",

@@ -1,8 +1,19 @@
 $red: #ED1C2E;
 $redHover: #CC1626;
 $white: #FFF;
+
+$font: 'proxima_novalight';
 .o-btn {
   text-decoration: none;
   color: $white;
+  font-family: $font;
   padding: .85em 1.25em;
+  background: $red;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border: transparent solid 0;
+  &:hover {
+    background: $redHover;
+  }
 }
