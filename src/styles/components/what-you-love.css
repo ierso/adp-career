@@ -5,19 +5,32 @@ $font: 'proxima_novaextrabold';
 }
   .c-what-you-love__wrapper {
     border: red solid 1px;
-    
+    padding: 2.5em 0;
   }
     .c-what-you-love__title {
       font-family: $font;
       text-align: center;
+      font-size: 2.15em;
+      margin-top: 0;
     }
     .c-what-you-love__form {
       display: flex;
       justify-content: center;
+      flex-direction: column;
     }
       .c-what-you-love__message {
         font-family: $font;
         &--only-mobile {
           display: none;
         }
+      }
+      .c-what-you-love__select {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.45em;
+      }
+      .c-what-you-love__search {
+        display: flex;
+        justify-content: center;
       }

@@ -22,7 +22,8 @@ $padding: 0.85em 1.75em;
   cursor: pointer;
   border: transparent solid 0;
   border-radius: $borderRadius;
-  letter-spacing: $letterSpacing;
+  letter-spacing: .12em;
+  transition: background 0.35s ease;
   &:hover {
     background: $redHover;
   }
@@ -36,10 +37,21 @@ $padding: 0.85em 1.75em;
   font-size: $fontSize;
   display: inline-block;
   padding: $padding;
-  min-width: 200px;
+  min-width: 215px;
+  cursor: pointer;
   &::after {
-    content: 'hi';
+    font-family: 'FontAwesome';
+    content: "\f0d7";
     position: absolute;
     right: 1em;
   }
+  &--active {
+    &::after {
+      content: "\f0d8";
+    }
+    .o-select-bg-dropdown {
+      display: block;
+    }
+  }
 }
+
