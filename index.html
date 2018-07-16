@@ -14,29 +14,34 @@
     </nav>
   </header>
 
+
   <div class="c-what-you-love">
     <div class="c-what-you-love__wrapper">
       <h2 class="c-what-you-love__title">
         Do what you love
       </h2>
       <form class="c-what-you-love__form">
-        <label class="c-what-you-love__message">I'm interested in</label>
-        <div class="c-what-you-love__dropdown">
-          <select id="job-category" class="c-what-you-love__select">
-            <option value="">Job Category</option>
-            <option value="administration">Administration</option>
-            <option value="client-service">Client Service</option>
-            <option value="digital-marketing">Digital Marketing</option>
-            <option value="facilities-management">Facilities Management</option>
-            <option value="finance-accounting">Finance/Accouting</option>
-            </select>
+        
+        <label class="c-what-you-love__message c-what-you-love__message--only-mobile">I'm interested in</label>
+        
+        <div class="c-what-you-love__select">
+          <div class="c-what-you-love__selector o-select-btn">Job Category</div>
+          <ul class="c-what-you-love__dropdown o-select-dropdown">
+            <li class="c-what-you-love__list-item">Administration</li>
+            <li class="c-what-you-love__list-item">Client Service</li>
+            <li class="c-what-you-love__list-item">Digital Marketing</li>
+            <li class="c-what-you-love__list-item">Facilities Management</li>
+            <li class="c-what-you-love__list-item">Finance/Accouting</li>
+          </ul>
         </div>
         
-
         <button class="c-what-you-love__btn o-btn">Search</button>
       </form>
     </div>
   </div>
+
+
+
   <script src="main.js"></script>
 </body>
 </html>

@@ -1,19 +1,45 @@
+$gray: #D8D8D8;
 $red: #ED1C2E;
 $redHover: #CC1626;
 $white: #FFF;
 
-$font: 'proxima_novalight';
+$font: 'proxima_novaextrabold';
+$fontSize: 1.15em;
+$letterSpacing: 0.02em;
+
+$borderRadius: 2em;
+$padding: 0.85em 1.75em;
+
 .o-btn {
   text-decoration: none;
   color: $white;
   font-family: $font;
-  padding: .85em 1.25em;
+  font-size: $fontSize;
+  padding: $padding;
   background: $red;
   display: flex;
   justify-content: center;
   cursor: pointer;
   border: transparent solid 0;
+  border-radius: $borderRadius;
+  letter-spacing: $letterSpacing;
   &:hover {
     background: $redHover;
+  }
+}
+.o-select-btn {
+  position: relative;
+  font-family: $font;
+  background: $gray;
+  letter-spacing: $letterSpacing;
+  border-radius: $borderRadius;
+  font-size: $fontSize;
+  display: inline-block;
+  padding: $padding;
+  min-width: 200px;
+  &::after {
+    content: 'hi';
+    position: absolute;
+    right: 1em;
   }
 }

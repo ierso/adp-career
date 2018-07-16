@@ -1,10 +1,44 @@
 @font-face {
+    font-family: 'font_awesome_5_brandsregular';
+    src: url('../../fonts/font_awesome_5_brands-regular-400-webfont.woff2') format('woff2'),
+         url('../../fonts/font_awesome_5_brands-regular-400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'font_awesome_5_freeregular';
+    src: url('../../fonts/font_awesome_5_free-regular-400-webfont.woff2') format('woff2'),
+         url('../../fonts/font_awesome_5_free-regular-400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'font_awesome_5_freesolid';
+    src: url('../../fonts/font_awesome_5_free-solid-900-webfont.woff2') format('woff2'),
+         url('../../fonts/font_awesome_5_free-solid-900-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fontawesomeregular';
+    src: url('../../fonts/fontawesome-webfont.woff2') format('woff2'),
+         url('../../fonts/fontawesome-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rock_saltregular';
+    src: url('../../fonts/rocksalt-webfont.woff2') format('woff2'),
+         url('../../fonts/rocksalt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'proxima_novablack';
     src: url('../../fonts/proximanova-black-webfont.woff2') format('woff2'),
          url('../../fonts/proximanova-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_nova_rgbold';
@@ -12,7 +46,6 @@
          url('../../fonts/proximanova-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_nova_rgbold_italic';
@@ -20,7 +53,6 @@
          url('../../fonts/proximanova-boldit-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_novaextrabold';
@@ -28,7 +60,6 @@
          url('../../fonts/proximanova-extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_novalight';
@@ -36,7 +67,6 @@
          url('../../fonts/proximanova-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_novalight_italic';
@@ -44,7 +74,6 @@
          url('../../fonts/proximanova-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_novaregular_italic';
@@ -52,7 +81,6 @@
          url('../../fonts/proximanova-regitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_nova_rgregular';
@@ -60,7 +88,6 @@
          url('../../fonts/proximanova-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_novaregular_italic';
@@ -68,7 +95,6 @@
          url('../../fonts/proximanova-regularitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_novasemibold';
@@ -76,7 +102,6 @@
          url('../../fonts/proximanova-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'proxima_novasemibold_italic';
@@ -84,5 +109,4 @@
          url('../../fonts/proximanova-semibolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }

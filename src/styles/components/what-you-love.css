@@ -1,0 +1,23 @@
+$font: 'proxima_novaextrabold';
+
+.c-what-you-love {
+
+}
+  .c-what-you-love__wrapper {
+    border: red solid 1px;
+    
+  }
+    .c-what-you-love__title {
+      font-family: $font;
+      text-align: center;
+    }
+    .c-what-you-love__form {
+      display: flex;
+      justify-content: center;
+    }
+      .c-what-you-love__message {
+        font-family: $font;
+        &--only-mobile {
+          display: none;
+        }
+      }
