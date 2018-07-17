@@ -2,13 +2,23 @@ $messageColor: #2A2828;
 $font: 'proxima_novaextrabold';
 $fontLink: 'proxima_nova_rgregular';
 $missionColor: #64CC30;
+$visionColor: #AC32BF;
 $white: #FFFFFF;
+
+$tablet: 768px;
 
 .c-cards {
   
 }
   .c-cards__wrapper {
     padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (min-width: $tablet) {
+      flex-wrap: nowrap;
+      padding: 1.5em 1em;
+    }
   }
     .c-cards__card {
       box-shadow: 2px 3px 8px 0 rgba(0,0,0,0.08);
@@ -18,8 +28,26 @@ $white: #FFFFFF;
       background-size: contain;
       background-repeat: no-repeat;
       background-position-y: bottom;
+      margin-bottom: 1.5em;
+
+      min-width: 200px;
+      max-width: 400px;
+      flex-grow: 1;
+
       &--mission {
         background-image:url('../../svgs/green-origami-rotated.svg');
+      }
+      &--vision {
+        background-image:url('../../svgs/purple-origami-rotated.svg');
+        background-position-x: right;
+        background-size: 65%;
+      }
+      @media (min-width: $tablet) {
+        height: 400px;
+        padding: 2em 6em 2em 3em;
+        &:first-child {
+          margin-right: 2.5em;
+        }
       }
     }
       .c-cards__title {
@@ -29,6 +57,12 @@ $white: #FFFFFF;
         &--mission {
           color: $missionColor;
         }
+        &--vision {
+          color: $visionColor;
+        }
+        @media (min-width: $tablet) {
+          font-size: 2.25em;
+        }
       }
       .c-cards__message {
         color: $messageColor;
@@ -36,8 +70,24 @@ $white: #FFFFFF;
         font-size: 1.5em;
         line-height: 1.25em;
         margin: 1em 0 1.5em 0;
+        @media (min-width: $tablet) {
+          font-size: 2em;
+        }
       }
       .c-cards__learn {
         font-family: $fontLink;
         font-size: 1.05em;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $messageColor;
+        &::after {
+          content: '';
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          margin: .25em 0 0 0.5em;
+          background-image:url('../../svgs/arrow.svg');
+          background-repeat: no-repeat;
+        }
       }

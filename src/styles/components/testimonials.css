@@ -1,0 +1,44 @@
+$quote: 'rock_saltregular';
+$messageHeight: 2.15em;
+$person: 'proxima_novaextrabold';
+$personReg: 'proxima_nova_rgregular';
+$white: #FFFFFF;
+
+.c-testimonials {
+  
+}
+  .c-testimonials__slide {
+    box-shadow: 2px 3px 8px 0 rgba(0,0,0,0.08);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    &--01 {
+      background-image:url('../../images/testimonial-1-large.jpg');
+    }
+    &--02 {
+      background-image:url('../../images/testimonial-2-large.jpg');
+    }
+  }
+    .c-testimonials__message-center {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+      .c-testimonials__message {
+        width: 35%;
+        margin: 0 3em 0 auto;
+      }
+        .c-testimonials__quote {
+          font-family: $quote;
+          color: $white;
+          line-height: $messageHeight;
+        }
+        .c-testimonials__person {
+          font-family: $person;
+          color: $white;
+          &--reg {
+            font-family: $personReg;
+          }
+        }

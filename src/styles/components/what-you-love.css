@@ -5,10 +5,9 @@ $tablet: 768px;
 
 }
   .c-what-you-love__wrapper {
-    border: red solid 1px;
     padding: 2.5em 0;
     @media (min-width: $tablet) {
-      padding: 2.5em 3em;
+      padding: 2.5em 1em;
     }
   }
     .c-what-you-love__title {
