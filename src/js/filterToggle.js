@@ -22,7 +22,6 @@ function filterToggle() {
       }
     }
   }
-
   function removeOtherActiveButtons(targetElement) {
     allFilterSelectors.forEach((element) => {
       if (element !== targetElement) {
@@ -45,7 +44,6 @@ function filterToggle() {
     }
     toggleActiveClass(targetElement);
   }
-
   filterForm.addEventListener('click', toggleFilterDropdown);
   body.addEventListener('click', closeOpenedFilter);
 }

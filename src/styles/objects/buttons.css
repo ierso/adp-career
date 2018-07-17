@@ -1,3 +1,5 @@
+$tablet: 768px;
+
 $gray: #D8D8D8;
 $red: #ED1C2E;
 $redHover: #CC1626;
@@ -52,6 +54,9 @@ $padding: 0.85em 1.75em;
     .o-select-bg-dropdown {
       display: block;
     }
+  }
+  @media (min-width: $tablet) {
+    min-width: 200px;
   }
 }
 

@@ -1,0 +1,20 @@
+$messageColor: #2A2828;
+$font: 'proxima_novaextrabold';
+
+.c-cards {
+
+}
+  .c-cards__wrapper {
+
+  }
+    .c-cards__card {
+      box-shadow: 2px 3px 8px 0 rgba(0,0,0,0.08);
+      padding: 2em 2em;
+    }
+      .c-cards__title {
+        font-family: $font;
+      }
+      .c-cards__message {
+        color: $messageColor;
+        font-family: $font;
+      }

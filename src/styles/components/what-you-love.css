@@ -1,4 +1,5 @@
 $font: 'proxima_novaextrabold';
+$tablet: 768px;
 
 .c-what-you-love {
 
@@ -6,6 +7,9 @@ $font: 'proxima_novaextrabold';
   .c-what-you-love__wrapper {
     border: red solid 1px;
     padding: 2.5em 0;
+    @media (min-width: $tablet) {
+      padding: 2.5em 3em;
+    }
   }
     .c-what-you-love__title {
       font-family: $font;
@@ -17,11 +21,19 @@ $font: 'proxima_novaextrabold';
       display: flex;
       justify-content: center;
       flex-direction: column;
+      @media (min-width: $tablet) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
     }
       .c-what-you-love__message {
         font-family: $font;
         &--only-mobile {
           display: none;
+          @media (min-width: $tablet) {
+            display: block;
+          }
         }
       }
       .c-what-you-love__select {
@@ -29,6 +41,9 @@ $font: 'proxima_novaextrabold';
         display: flex;
         justify-content: center;
         margin-bottom: 1.45em;
+        @media (min-width: $tablet) {
+          margin-bottom: 0;
+        }
       }
       .c-what-you-love__search {
         display: flex;
