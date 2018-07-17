@@ -1,3 +1,10 @@
+$navItems: 'proxima_novasemibold';
+$navColor: #333F48;
+$navHoverColor: #ED1C2E;
+$white: #FFFFFF;
+
+$navWidth: 600px;
+
 .c-nav {
   height: 70px;
   display: flex;
@@ -9,12 +16,55 @@
     padding: 0 1em;
   }
     .c-nav__links {
-      margin-left: auto;
+      display: none;
+      &--open {
+        display: block;
+        border: red solid 1px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+        bottom: 0;
+        display: flex;
+        flex-flow: column;
+        z-index: 100;
+        background: $white;
+        padding: 4em 0 0 3em;
+        .c-nav__link-item {
+          font-size: 1.5em;
+          margin-bottom: 1em;
+        }
+          .c-nav__exit { 
+            display: block;
+          }
+      }
+      @media (min-width: $navWidth) {
+        margin-left: auto;
+        display: block;
+      } 
     }
       .c-nav__link-item {
         text-decoration: none;
         margin-right: 2.5em;
+        font-family: $navItems;
+        color: $navColor;
+        transition: color 0.25s ease;
         &:last-child {
           margin-right: 0;
         }
+        &:hover {
+          color: $navHoverColor;
+        }
       }
+    .c-nav__hamburger {
+      margin-left: auto;
+      cursor: pointer;
+      @media (min-width: $navWidth) {
+        display: none;
+      }
+    }
+    .c-nav__exit {
+      display: none;
+      position: absolute;
+      top: 1.5em;
+      right: 1.5em;
+    }
