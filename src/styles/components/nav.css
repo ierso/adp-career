@@ -1,0 +1,20 @@
+.c-nav {
+  height: 70px;
+  display: flex;
+}
+  .c-nav__wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 1em;
+  }
+    .c-nav__links {
+      margin-left: auto;
+    }
+      .c-nav__link-item {
+        text-decoration: none;
+        margin-right: 2.5em;
+        &:last-child {
+          margin-right: 0;
+        }
+      }

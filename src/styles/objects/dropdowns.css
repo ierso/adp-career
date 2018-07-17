@@ -12,7 +12,7 @@ $fontColorHover: #ED1C2E;
   right: 0;
   background: $lightGray;
   margin: 0;
-  z-index: 1;
+  z-index: 2;
   padding: 1.5em 1.35em;
   border-radius: $borderRadius;
   height: 9.81em;

@@ -9,15 +9,25 @@
 </head>
 <body>
   <header>
-    <nav>
-      
+    <nav class="c-nav">
+      <div class="c-nav__wrapper l-container-wide">
+        <a href="" class="c-nav__logo">
+          <img src="./src/svgs/adp-logo.svg" alt="adp-logo">
+        </a>
+        <div class="c-nav__links">
+          <a href="#" class="c-nav__link-item">Life @ ADP</a>
+          <a href="#" class="c-nav__link-item">Terms & Roles</a>
+          <a href="#" class="c-nav__link-item">Locations</a>
+          <a href="#" class="c-nav__link-item">Events</a>
+        </div>
+      </div>
     </nav>
   </header>
 
 
   <section class="c-what-you-love">
     <div class="c-what-you-love__wrapper l-container">
-      <h2 class="c-what-you-love__title">
+      <h2 class="c-what-you-love__title o-title">
         Do what you love
       </h2>
       <form class="c-what-you-love__form">
@@ -61,7 +71,7 @@
     </div>
   </section>
 
-  <div class="l-bg l-bg--gray">
+  <div class="l-bg l-bg--gray l-bg--in-front">
     <section class="c-cards">
         <div class="c-cards__wrapper l-container">
           <div class="c-cards__card c-cards__card--mission">
@@ -80,25 +90,34 @@
           </div>
         </div>
       </section>
-      <section class="c-testimonials l-container">
-        <div class="c-testimonials__slide c-testimonials__slide--01">
-          <div class="c-testimonials__message-center">
-              <div class="c-testimonials__message">
-                  <p class="c-testimonials__quote">“Each day has been an amazing experience. I am proud of what I do and my environment is positive and motivational each day.”</p>
-                  <span class="c-testimonials__person">– Matt Stevenson, <span class="c-testimonials__person c-testimonials__person--reg">Director of IT</span></span>
-              </div>
-          </div>
-        </div>
-        <div class="c-testimonials__slide c-testimonials__slide--02">
+    </div>
+    <div class="l-bg l-bg--gray l-bg--nudge-up">
+      <section class="c-testimonials__wrapper c-testimonials__wrapper--nudge-down l-container">
+          <h2 class="o-title">
+            What our employees are saying
+          </h2>
+        <div class="c-testimonials">
+          <div class="c-testimonials__slide c-testimonials__slide--01">
             <div class="c-testimonials__message-center">
+              <div class="c-testimonials__message">
+                <p class="c-testimonials__quote">“Each day has been an amazing experience. I am proud of what I do and my environment is positive and motivational each day.”</p>
+                <span class="c-testimonials__person">– Matt Stevenson, <span class="c-testimonials__person c-testimonials__person--reg">Director of IT</span></span>
+              </div>
+            </div>
+            </div>
+            <div class="c-testimonials__slide c-testimonials__slide--02">
+              <div class="c-testimonials__message-center">
                 <div class="c-testimonials__message">
-                    <p class="c-testimonials__quote">“Each day has been an amazing experience. I am proud of what I do and my environment is positive and motivational each day.”</p>
-                    <span class="c-testimonials__person">– Emily Sims, Content Marketing Manager</span>
+                  <p class="c-testimonials__quote">“Each day has been an amazing experience. I am proud of what I do and my environment is positive and motivational each day.”</p>
+                  <span class="c-testimonials__person">– Emily Sims, <span class="c-testimonials__person c-testimonials__person--reg"></span>Content Marketing Manager</span></span>
                 </div>
+              </div>
             </div>
         </div>
       </section>
-  </div>
+    </div>
+      
+  
 
   <script src="main.js"></script>
 </body>

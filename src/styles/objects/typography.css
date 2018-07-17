@@ -1,0 +1,9 @@
+$font: 'proxima_novaextrabold';
+
+.o-title {
+  font-family: $font;
+  text-align: center;
+  font-size: 2.15em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}

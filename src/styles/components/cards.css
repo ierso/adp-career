@@ -4,6 +4,7 @@ $fontLink: 'proxima_nova_rgregular';
 $missionColor: #64CC30;
 $visionColor: #AC32BF;
 $white: #FFFFFF;
+$boxShadow: 2px 3px 15px 0 rgba(0,0,0,0.15);
 
 $tablet: 768px;
 
@@ -21,7 +22,7 @@ $tablet: 768px;
     }
   }
     .c-cards__card {
-      box-shadow: 2px 3px 8px 0 rgba(0,0,0,0.08);
+      box-shadow: $boxShadow;
       padding: 2em 2em;
       background: $white;
       height: 300px;

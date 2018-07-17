@@ -11,10 +11,6 @@ $tablet: 768px;
     }
   }
     .c-what-you-love__title {
-      font-family: $font;
-      text-align: center;
-      font-size: 2.15em;
-      margin-top: 0;
     }
     .c-what-you-love__form {
       display: flex;
