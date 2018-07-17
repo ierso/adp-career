@@ -1,20 +1,43 @@
 $messageColor: #2A2828;
 $font: 'proxima_novaextrabold';
+$fontLink: 'proxima_nova_rgregular';
+$missionColor: #64CC30;
+$white: #FFFFFF;
 
 .c-cards {
-
+  
 }
   .c-cards__wrapper {
-
+    padding: 1.5em;
   }
     .c-cards__card {
       box-shadow: 2px 3px 8px 0 rgba(0,0,0,0.08);
       padding: 2em 2em;
+      background: $white;
+      height: 300px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      &--mission {
+        background-image:url('../../svgs/green-origami-rotated.svg');
+      }
     }
       .c-cards__title {
         font-family: $font;
+        font-size: 1.85em;
+        margin: 0;
+        &--mission {
+          color: $missionColor;
+        }
       }
       .c-cards__message {
         color: $messageColor;
         font-family: $font;
+        font-size: 1.5em;
+        line-height: 1.25em;
+        margin: 1em 0 1.5em 0;
+      }
+      .c-cards__learn {
+        font-family: $fontLink;
+        font-size: 1.05em;
       }
