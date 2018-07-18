@@ -2,6 +2,7 @@ $footerBG: #F3F3F3;
 $details: 'proxima_nova_rgregular';
 $detailsColor: #9B9B9B;
 $iconBG: #333F48;
+$white: #FFFFFF;
 
 $tablet: 768px;
 
@@ -34,8 +35,35 @@ $tablet: 768px;
         background: $iconBG;
         margin-right: 1em;
         border-radius: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+          font-family: FontAwesome;
+          color: $white;
+        }
         &:last-child {
           margin-right: 0;
+        }
+        &--facebook {
+          &::before {
+            content: '\f09a';
+          }
+        }
+        &--twitter {
+          &::before {
+            content: '\f099';
+          }
+        }
+        &--instagram {
+          &::before {
+            content: '\f16d';
+          }
+        }
+        &--youtube {
+          &::before {
+            content: '\f16a';
+          }
         }
       }
   .c-footer__details {

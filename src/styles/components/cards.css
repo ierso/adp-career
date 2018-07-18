@@ -6,7 +6,7 @@ $visionColor: #AC32BF;
 $white: #FFFFFF;
 $boxShadow: 2px 3px 15px 0 rgba(0,0,0,0.15);
 
-$tablet: 768px;
+$tablet: 800px;
 
 .c-cards {
   
@@ -36,10 +36,10 @@ $tablet: 768px;
       flex-grow: 1;
 
       &--mission {
-        background-image:url('../../svgs/green-origami-rotated.svg');
+        background-image:url('../../svgs/green-origami-rotated-opacity.svg');
       }
       &--vision {
-        background-image:url('../../svgs/purple-origami-rotated.svg');
+        background-image:url('../../svgs/purple-origami-rotated-opacity.svg');
         background-position-x: right;
         background-size: 65%;
       }
@@ -82,6 +82,7 @@ $tablet: 768px;
         align-items: center;
         text-decoration: none;
         color: $messageColor;
+        transition: color 0.5s ease;
         &::after {
           content: '';
           width: 15px;
@@ -90,5 +91,15 @@ $tablet: 768px;
           margin: .25em 0 0 0.5em;
           background-image:url('../../svgs/arrow.svg');
           background-repeat: no-repeat;
+        }
+        &--mission {
+          &:hover {
+            color: $missionColor;
+          }
+        }
+        &--vision {
+          &:hover {
+            color: $visionColor;
+          }
         }
       }

@@ -1,25 +1,62 @@
 $copy: 'proxima_novaextrabold';
 $white: #FFFFFF;
 
+$tablet: 768px;
+$phone: 415px;
+
 .c-hero {
-  background: palevioletred;
+  background-image:url('../../images/hero-image-mobile-size.jpg');
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 75vh;
+  @media (min-width: $phone) {
+    background-size: cover;
+    background-position: center center;
+    background-image:url('../../images/hero-image-full-size.jpg');
+  }
 }
   .c-hero__message {
+    margin-top: auto;
+    margin-bottom: 2.25em;
     display: flex;
     justify-content: center;
     flex-flow: column;
+    @media (min-width: $tablet) {
+      margin-top: initial;
+      margin-bottom: initial;
+      margin-top: 70px;
+    }
   }
     .c-hero__title {
-
+      &--desktop {
+        display: none;
+        @media (min-width: $tablet) {
+          display: block;
+        }
+      }
+      &--mobile {
+        width: 100%;
+        @media (min-width: $tablet) {
+          display: none;
+        }
+      }
     }
       .c-hero__copy {
         font-family: $copy;
         color: $white;
+        text-align: center;
+        margin: .85em 0 1em 0;
+        @media (min-width: $tablet) {
+          margin: .85em 0 1.25em 0;
+        }
       }
+        .c-hero__copy-break {
+          @media (min-width: $tablet) {
+            display: none;
+          }
+        }
       .c-hero__play {
         cursor: pointer;
         max-width: 62px;
