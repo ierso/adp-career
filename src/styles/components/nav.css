@@ -5,6 +5,15 @@ $white: #FFFFFF;
 
 $navWidth: 600px;
 
+.headroom {
+  opacity: 1;
+  transition: all 0.5s ease;
+  &--unpinned {
+    opacity: 0;
+    transform: translateY(-90px);
+  }
+}
+
 .c-nav {
   height: 70px;
   display: flex;
@@ -37,7 +46,8 @@ $navWidth: 600px;
           font-size: 1.5em;
           margin-bottom: 1em;
         }
-          .c-nav__exit { 
+          .c-nav__exit {
+            cursor: pointer;
             display: block;
           }
       }
