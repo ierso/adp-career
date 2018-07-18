@@ -16,7 +16,7 @@ $phone: 415px;
   }
   @media (min-width: $phone) {
     background-size: cover;
-    background-position: center center;
+    background-position: center calc(50% + 30px);
     background-image:url('../../images/hero-image-full-size.jpg');
   }
 }
