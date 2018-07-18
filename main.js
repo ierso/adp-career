@@ -6,3 +6,8 @@ import navToggle from './src/js/navToggle';
 navToggle();
 filterToggle();
 initSlider();
+
+
+// scene.on('enter',function(event){
+//   console.log(event.scrollDirection);
+// });

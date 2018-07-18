@@ -1,16 +1,52 @@
 $footerBG: #F3F3F3;
 $details: 'proxima_nova_rgregular';
 $detailsColor: #9B9B9B;
+$iconBG: #333F48;
 
 $tablet: 768px;
 
 .c-footer {
   display: flex;
   flex-flow: column;
-  font-family: $details;
-  color: $detailsColor;
   background: $footerBG;
-  @media (min-width: $tablet) {
-    text-align: center;
-  }
+  padding: 2em 1.5em;
 }
+  .c-footer__social {
+    display: flex;
+    flex-flow: column;
+  }
+    .c-footer__social-copy {
+      text-align: center;
+      color: $iconBG;
+      font-family: $details;
+      font-size: 1.5em;
+    }
+    .c-footer__social-list {
+      margin: 1em 0 1.5em 0;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+      .c-footer__icon {
+        list-style: none;
+        width: 3em;
+        height: 3em;
+        background: $iconBG;
+        margin-right: 1em;
+        border-radius: 2em;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+  .c-footer__details {
+    margin-top: 4em;
+  }
+    .c-footer__copy {
+      font-size: 1.05em;
+      font-family: $details;
+      color: $detailsColor;
+      line-height: 1.25em;
+      @media (min-width: $tablet) {
+        text-align: center;
+      }
+    }
