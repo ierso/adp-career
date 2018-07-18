@@ -1,0 +1,29 @@
+$videoBreak: 970px;
+
+.c-video {
+  overflow: hidden;
+  height: 75vh;
+  display: none;
+  &--show {
+    display: block;
+  }
+}
+  .c-video__wrapper {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    z-index: -1;
+    transform-origin: center;
+    transform: scale(5);
+    @media (min-width: $videoBreak) {
+      transform: scale(1);
+    }
+  }
+    #c-video__iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }

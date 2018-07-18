@@ -11,6 +11,9 @@ $phone: 415px;
   justify-content: center;
   align-items: center;
   height: 75vh;
+  &--hide {
+    display: none;
+  }
   @media (min-width: $phone) {
     background-size: cover;
     background-position: center center;
@@ -62,3 +65,4 @@ $phone: 415px;
         max-width: 62px;
         margin: 0 auto;
       }
+    

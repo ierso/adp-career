@@ -16,7 +16,8 @@
     "headroom.js": "^0.9.4",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "youtube-player": "^5.5.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.4",
