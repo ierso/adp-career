@@ -1,0 +1,11 @@
+$tablet: 455px;
+
+.c-collage {
+  background-image: url('../../images/collage.jpg');
+  background-size: cover;
+  height: 183px;
+  background-position: center;
+  @media (min-width: $tablet) {
+    height: 507px;
+  }
+}
