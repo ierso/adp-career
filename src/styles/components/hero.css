@@ -1,3 +1,6 @@
+$copy: 'proxima_novaextrabold';
+$white: #FFFFFF;
+
 .c-hero {
   background: palevioletred;
   display: flex;
@@ -5,3 +8,20 @@
   align-items: center;
   height: 75vh;
 }
+  .c-hero__message {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  }
+    .c-hero__title {
+
+    }
+      .c-hero__copy {
+        font-family: $copy;
+        color: $white;
+      }
+      .c-hero__play {
+        cursor: pointer;
+        max-width: 62px;
+        margin: 0 auto;
+      }

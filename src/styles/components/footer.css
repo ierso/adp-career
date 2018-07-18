@@ -1,0 +1,16 @@
+$footerBG: #F3F3F3;
+$details: 'proxima_nova_rgregular';
+$detailsColor: #9B9B9B;
+
+$tablet: 768px;
+
+.c-footer {
+  display: flex;
+  flex-flow: column;
+  font-family: $details;
+  color: $detailsColor;
+  background: $footerBG;
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
+}
