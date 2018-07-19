@@ -1,5 +1,7 @@
 # ADP Career landing
 
+Hosted: https://adp-career.firebaseapp.com/
+
 ## Build & development
 Run `npm install`
 Run `npm install -g parcel-bundler`

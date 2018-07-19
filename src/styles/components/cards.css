@@ -9,7 +9,7 @@ $boxShadow: 2px 3px 15px 0 rgba(0,0,0,0.15);
 $tablet: 800px;
 
 .c-cards {
-  
+  padding-top: 3.5em;
 }
   .c-cards__wrapper {
     padding: 1.5em;

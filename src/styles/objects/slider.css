@@ -3,11 +3,12 @@
 
 $white: #FFFFFF;
 $shadow: 2px 3px 28px 0 rgba(0,0,0,0.25);
+$arrowColor: #2A2828;
+$arrowBreakPoint: 975px;
 
 .slick-list {
   box-shadow: $shadow;
 }
-
 .slick-dots {
   bottom: 1em;
 }
@@ -30,5 +31,23 @@ $shadow: 2px 3px 28px 0 rgba(0,0,0,0.25);
     height: 15px;
     width: 15px;
     color: transparent;
+  }
+}
+.slick-prev {
+  left: -35px;
+  &::before {
+    font-family: 'FontAwesome';
+    content: '\f053';
+    color: $arrowColor;
+    font-size: 30px;
+  }
+}
+.slick-next {
+  right: -35px;
+  &::before {
+    font-family: 'FontAwesome';
+    content: '\f054';
+    color: $arrowColor;
+    font-size: 30px;
   }
 }

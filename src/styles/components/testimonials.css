@@ -7,18 +7,17 @@ $white: #FFFFFF;
 $tablet: 768px;
 
 .c-testimonials__wrapper {
-  padding: 0 1.5em;
+  padding: 2em 1.5em 0 1.5em;
   @media (min-width: $tablet) {
-    padding: 0;
+    padding: 3.5em 0 0 0;
   }
   &--nudge-down {
     transform: translateY(100px);
   }
 }
-
-.c-testimonials {
-  
-}
+  .c-testimonials__title {
+    padding-bottom: .5em;
+  }
   .c-testimonials__slide {
     box-shadow: 2px 3px 8px 0 rgba(0,0,0,0.08);
     height: 474px;

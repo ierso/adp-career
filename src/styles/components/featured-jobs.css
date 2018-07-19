@@ -9,10 +9,16 @@ $tablet: 800px;
 
 .c-featured-jobs {
   margin-top: 4em;
+  @media (min-width: $tablet) {
+    margin-top: 6em;
+  }
 }
   .c-featured-jobs__wrapper {
     padding: 0 1.5em;
   }
+    .c-featured-jobs__title {
+      padding-bottom: .5em;
+    }
     .c-featured-jobs__row {
       flex-flow: column;
       display: flex;

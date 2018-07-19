@@ -3,3 +3,4 @@ node_modules
 public
 .cache
 .eslintrc.js
+.DS_Store
